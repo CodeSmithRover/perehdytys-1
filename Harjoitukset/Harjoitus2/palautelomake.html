@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palautelomake – Kiree Kauppa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://raw.githubusercontent.com/CodeSmithRover/perehdytys-1/refs/heads/main/Harjoitukset/Harjoitus2/images/logo.png" alt="Kaupan logo" />
+                <h1><a href="index.html" style="color: inherit; text-decoration: none;">Kiree Kauppa</a></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Kategoriat</a></li>
+                    <li><a href="#">Yhteystiedot</a></li>
+                    <li><a href="#">Tietoa meistä</a></li>
+                    <li><a href="#">Kirjaudu sisään</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <img src="https://raw.githubusercontent.com/CodeSmithRover/perehdytys-1/refs/heads/main/Harjoitukset/Harjoitus2/images/search.png" alt="Haku" class="icon" />
+                <img src="https://raw.githubusercontent.com/CodeSmithRover/perehdytys-1/refs/heads/main/Harjoitukset/Harjoitus2/images/cart.png" alt="Ostoskori" class="icon" />
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Palautelomake</h2>
+            <form>
+                <label for="nimi">Nimi *</label><br>
+                <input type="text" id="nimi" name="nimi" required><br><br>
+
+                <label for="email">Sähköpostiosoite *</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="puhelin">Puhelinnumero *</label><br>
+                <input type="tel" id="puhelin" name="puhelin" required><br><br>
+
+                <label for="aihe">Mitä palaute koskee? *</label><br>
+                <select id="aihe" name="aihe" required>
+                    <option value="">-- Valitse --</option>
+                    <option value="sivusto">Sivusto</option>
+                    <option value="tuotteet">Tuotteet</option>
+                    <option value="reklamaatio">Reklamaatio</option>
+                    <option value="toimitus">Toimitus</option>
+                </select><br><br>
+
+                <label for="palaute">Palaute *</label><br>
+                <textarea id="palaute" name="palaute" rows="5" required></textarea><br><br>
+
+                <p>Toivottu yhteydenottotapa:</p>
+                <input type="radio" id="sahkoposti" name="yhteydenotto" value="sahkoposti" checked>
+                <label for="sahkoposti">Sähköposti</label><br>
+
+                <input type="radio" id="puhelin_yhteys" name="yhteydenotto" value="puhelin">
+                <label for="puhelin_yhteys">Puhelin</label><br><br>
+
+                <button type="submit">Lähetä</button>
+                <button type="reset">Tyhjennä</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#">Kategoriat</a></li>
+                <li><a href="#">Yhteystiedot</a></li>
+                <li><a href="#">Tietoa meistä</a></li>
+                <li><a href="#">Kirjaudu sisään</a></li>
+            </ul>
+        </nav>
+        <p>© 2025 Kiree Kauppa. Kaikki oikeudet pidätetään.</p>
+    </footer>
+</body>
+</html>
